@@ -6,13 +6,12 @@
                 data-bs-toggle="collapse" data-bs-target="#navbarVerticalCollapse" aria-controls="navbarVerticalCollapse"
                 aria-expanded="false" aria-label="Toggle Navigation"><span class="navbar-toggle-icon"><span
                         class="toggle-line"></span></span></button>
-            <a class="navbar-brand me-1 me-sm-3" href="#">
+            <a class="navbar-brand me-1 me-sm-3" href="{{ route('home') }}">
                 <div class="d-flex align-items-center">
                     <div class="d-flex align-items-center">
-                        <img src="{{ $sets->web_logo ? Storage::url($sets->web_logo) : asset('backend/assets/img/default/nope.jpg') }}"
-                            alt="phoenix" width="27" />
+                        <img src="{{ asset('backend/assets/img/default/nope.jpg') }}" alt="phoenix" width="27" />
                         <h5 class="logo-text ms-2 d-none d-sm-block">
-                            {{ $sets->web_title ? $sets->web_title : config('app.name') }}
+                            {{ config('app.name') }}
                         </h5>
                     </div>
                 </div>

@@ -10,8 +10,8 @@
                 @csrf
                 <div class="col-sm-12 col-md-12">
                     <div class="form-floating">
-                        <input class="form-control" id="nomor_agenda" type="text" name="nomor_agenda" placeholder="Nomor Agenda"
-                            required />
+                        <input class="form-control" id="nomor_agenda" type="text" name="nomor_agenda"
+                            placeholder="Nomor Agenda" required />
                         <label for="nomor_agenda">Nomor Agenda</label>
                     </div>
                 </div>

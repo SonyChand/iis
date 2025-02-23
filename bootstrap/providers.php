@@ -3,5 +3,5 @@
 
 return [
     App\Providers\AppServiceProvider::class,
-    App\Providers\WebSettingsServiceProvider::class,
+    // App\Providers\WebSettingsServiceProvider::class,
 ];

@@ -15,14 +15,14 @@
                     <div class="col col-sm-6 col-lg-7 col-xl-6"><a class="d-flex flex-center text-decoration-none mb-4"
                             href="{{ asset('backend') }}/index.html">
                             <div class="d-flex align-items-center fw-bolder fs-3 d-inline-block"><img
-                                    src="{{ $sets->web_logo ? Storage::url($sets->web_logo) : asset('backend/assets/img/default/nope.jpg') }}"
-                                    alt="phoenix" width="58" />
+                                    src="{{ asset('backend/assets/img/default/nope.jpg') }}" alt="phoenix"
+                                    width="58" />
                             </div>
                         </a>
                         <div class="text-center mb-7">
                             <h3 class="text-body-highlight">Login</h3>
                             <p class="text-body-tertiary">Masuk ke
-                                {{ $sets->web_title ? $sets->web_title : config('app.name') }}</p>
+                                {{ config('app.name') }}</p>
                         </div>
                         <a href="{{ route('auth.google') }}" class="btn btn-phoenix-secondary w-100 mb-3"><span
                                 class="fab fa-google text-success me-2 fs-9"></span>Login dengan Google</a>
@@ -68,8 +68,6 @@
                             </div>
                             <button type="submit" class="btn btn-primary w-100 mb-3">Login</button>
                         </form>
-                        <div class="text-center"><a class="fs-9 fw-bold" href="{{ route('register') }}">Buat akun</a>
-                        </div>
                     </div>
                 </div>
             </div>

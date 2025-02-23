@@ -10,7 +10,7 @@
     <div class="mb-9">
         <div id="projectSummary">
             <div class="row g-3 mb-4">
-                    <div class="col-md-6">
+                <div class="col-md-6">
                     <div class="p-6 m-20 bg-white rounded shadow" id="chart-container">
                         {!! $chart2->container() !!}
                     </div>

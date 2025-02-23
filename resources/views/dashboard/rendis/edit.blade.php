@@ -11,15 +11,16 @@
                 @method('PUT')
                 <div class="col-sm-12 col-md-12">
                     <div class="form-floating">
-                        <input class="form-control" id="nomor_agenda" type="text" name="nomor_agenda" placeholder="Nomor Agenda"
-                            required value="{{ $renstraKadis->nomor_agenda }}" />
+                        <input class="form-control" id="nomor_agenda" type="text" name="nomor_agenda"
+                            placeholder="Nomor Agenda" required value="{{ $renstraKadis->nomor_agenda }}" />
                         <label for="nomor_agenda">Nomor Agenda</label>
                     </div>
                 </div>
                 <div class="col-sm-12 col-md-12">
                     <div class="form-floating">
                         <input class="form-control" id="nama_agenda_renstra" type="text" name="nama_agenda_renstra"
-                            placeholder="Nama Agenda Renstra" required value="{{ $renstraKadis->nama_agenda_renstra }}" />
+                            placeholder="Nama Agenda Renstra" required
+                            value="{{ $renstraKadis->nama_agenda_renstra }}" />
                         <label for="nama_agenda_renstra">Nama Agenda Renstra</label>
                     </div>
                 </div>
@@ -33,7 +34,8 @@
                 <div class="col-sm-12 col-md-12">
                     <div class="form-floating">
                         <input class="form-control" id="disposisi_diteruskan" type="text" name="disposisi_diteruskan"
-                            placeholder="Disposisi Diteruskan" required value="{{ $renstraKadis->disposisi_diteruskan }}" />
+                            placeholder="Disposisi Diteruskan" required
+                            value="{{ $renstraKadis->disposisi_diteruskan }}" />
                         <label for="disposisi_diteruskan">Disposisi Diteruskan</label>
                     </div>
                 </div>

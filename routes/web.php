@@ -14,10 +14,13 @@ use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Dashboard\Management\ActivityController;
 use App\Http\Controllers\Dashboard\Management\RoleController;
 use App\Http\Controllers\Dashboard\Management\UserController;
+use App\Http\Controllers\TravelController;
 
-Route::get('/', function () {
-    return Auth::check() ? redirect()->route('dashboard') : redirect()->route('login');
-});
+use App\Http\Controllers\HomeController;
+
+Route::get('/', [HomeController::class, 'index'])->name('home');
+Route::get('/travel/{id}', [HomeController::class, 'show'])->name('home.detail');
+
 
 Route::get('/tes', function () {
     return view('tes');
@@ -54,6 +57,7 @@ Route::get('/dashboard', [DashboardController::class, 'index'])->middleware(['au
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('profiles', ProfileController::class);
     Route::resource('settings', WebSettingController::class);
+    Route::resource('travels', TravelController::class);
 
     // Users
     Route::get('users/export/{format}', [UserController::class, 'export'])->name('users.export');

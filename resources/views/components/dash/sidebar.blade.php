@@ -27,7 +27,7 @@
                                 href="{{ route('roles.index') }}" role="button" data-bs-toggle="" aria-expanded="false">
                                 <div class="d-flex align-items-center">
                                     <span class="nav-link-icon">
-                                        <span data-feather="compass"></span>
+                                        <span data-feather="key"></span>
                                     </span>
                                     <span class="nav-link-text-wrapper">
                                         <span class="nav-link-text">{{ __('text-ui.sidebar.role') }}</span>
@@ -87,6 +87,19 @@
                     </div>
                 @endcan
 
+                <div class="nav-item-wrapper">
+                    <a class="nav-link {{ request()->routeIs('travels.*') ? 'active' : '' }} label-1"
+                        href="{{ route('travels.index') }}" role="button" data-bs-toggle="" aria-expanded="false">
+                        <div class="d-flex align-items-center">
+                            <span class="nav-link-icon">
+                                <span data-feather="map"></span>
+                            </span>
+                            <span class="nav-link-text-wrapper">
+                                <span class="nav-link-text">Data Travel</span>
+                            </span>
+                        </div>
+                    </a>
+                </div>
 
             </ul>
         </div>
